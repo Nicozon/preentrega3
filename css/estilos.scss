@@ -22,13 +22,13 @@
 // main
 main{
     width: 100%;
-    background-color: #f37d39;
+    background-color: #f37d39b6;
     background-image: url(../img/Main.JPG);
     background-size: cover;
     background-position: center;
 }
 
-h1 {
+h1{
     text-align: center;
 }
 
@@ -42,7 +42,6 @@ h2{
     padding-bottom: 3px;
 }
 
-// cursos
 .nleft{
     height: 800px;
     background-image: url(../img/fotosoldi.jpg);
@@ -58,9 +57,40 @@ h2{
     font-size: 20px;
     padding-top: 30px;
     margin-top: 0;
-    background-color: #f37d3970;
+    background-color: #f37d3934;
 }
 
+.textoindex{
+    margin:23px;
+}
+
+// Nosotros
+
+.infonosotrosright{
+    height: auto;
+    background-image: url(../img/nosotros.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.infonosotrosleft{
+    color:white;
+    text-align: justify;
+    text-shadow: 0 0 5px #000;
+    font-size: 20px;
+    padding-top: 30px;
+    margin-top: 0;
+    background-color: #f37d3921;
+}
+
+.textonosotros{
+    padding:30px;
+    
+}
+
+// cursos
 .cursos{
     width: 100%;
     height: auto;
@@ -85,41 +115,20 @@ h2{
 }
 
 .nleftteatro{
-    height: 450px;
+    @extend .nleftcursos;
     background-image: url(../img/teatro.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-top: 0px;
 }
 
+
 .nrightteatro{
-    color:white;
-    text-align: justify;
-    text-shadow: 0 0 5px #000;
-    font-size: 20px;
-    padding-top: 30px;
-    background-color: #f37d3970;
+    @extend .nrightcursos;
+    background-color: #ff8800d0;
+    ;
 }
 
 .nleftguitarra{
-    height: 450px;
+    @extend .nleftcursos;
     background-image: url(../img/guitarra.jpg);
-    background-size: cover;
-    background-position: center;
-    margin-top: 0px;
-}
-
-
-// nosotros
-
-.nosotros{
-    height:100vh;
-    background-color: #ff88009d;
-    color:#fff;
-    text-shadow: 0 0 5px #000;
-    text-align: center;
-    margin-bottom: 0;
-    padding-bottom: 3px;
 }
 
 // turismo
@@ -137,7 +146,6 @@ img{
     max-width: 100%;
     transition: transform 1s ease-in-out;
 }
-
 
 .imagenturismo:hover{
     transform: scale(1.03)
@@ -161,8 +169,6 @@ img{
 
 // Contacto
 
-/* ---- Contacto ---- */
-
 .formulario{
     display: flex;
     flex-direction: column;
@@ -170,101 +176,42 @@ img{
     margin-top: 50px;
 }
 
-.inputs{
-
-    input{
-    padding-left: 100px;
-    width: 300px;
-    margin: 10px 0 50px 0;
-    padding: 10px;
-    border: 0px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
-    outline: none;
-}
-
-.inputs{
-    margin-top: 50px;
-}
-
-input{
+.inputs input{
     padding-left: 100px;
     width: 300px;
     margin: 10px 0 10px 0;
+    margin-top: 50px;
     padding: 10px;
-    border: 0px;
-    border: 2px solid rgba(0, 0, 0, 0.8);
+    border: 3px solid rgba(0, 0, 0, 0.8);
     outline: none;
-    background-color: white;
-    }
 }
 
-.mensaje{
-
-input{
+.mensaje input{
     padding-left: 100px;
     width: 300px;
-    margin: 10px 0 50px 0;
+    margin: 10px 0px 50px 0;
     padding: 10px;
-    border: solid 1px rgba(0, 0, 0, 0.8);
+    border: solid 3px rgba(0, 0, 0, 0.8);
     background-color: white;
     height: 150px;
     outline: none;
-    }
 }
 
-.enviar{
-
-    input{
+.enviar input{
     font-size:20px;
     color:#f37d39;
     padding-left: 100px;
     width: 300px;
     margin: 10px 0 50px 0;
     padding: 10px;
-    border: 0px;
-    border: 2px solid white;
+    border: 3px solid white;
     background-color: rgba(0, 0, 0, 0.8);
     transition: 0.5s;
-}
-
-    button {
-    padding-left: 100px;
-    width: 300px;
-    margin: 10px 0 50px 0;
-    padding: 10px;
-    border: 0px;
-    border: 2px solid rgba(0, 0, 0, 0.8);
-    background-color: white;
-    transition: 0.5s;
-    }
 }
 
 .enviar:hover {
-
-    input {
-    color: white;
-    padding-left: 100px;
-    width: 300px;
-    margin: 10px 0 50px 0;
-    padding: 10px;
-    border: 0px;
-    border: 2px solid white;
-    background-color: rgba(0, 0, 0, 0.8);
     transition: 0.5s;
     transform: scale(1.1);
-}
-
-button {
-    color: white;
-    padding-left: 100px;
-    width: 300px;
-    margin: 10px 0 50px 0;
-    padding: 10px;
-    border: 0px;
-    border: 2px solid white;
-    background-color: rgba(0, 0, 0, 0.8);
-    transition: 0.5s;
-    }
 }
 
 .mapa {
@@ -272,7 +219,6 @@ button {
     width: 100%;
 
     iframe {
-
     display: block;
     position: center;
     width: 100%;

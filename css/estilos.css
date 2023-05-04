@@ -20,7 +20,7 @@
 
 main {
   width: 100%;
-  background-color: #f37d39;
+  background-color: rgba(243, 125, 57, 0.7137254902);
   background-image: url(../img/Main.JPG);
   background-size: cover;
   background-position: center;
@@ -55,7 +55,34 @@ h2 {
   font-size: 20px;
   padding-top: 30px;
   margin-top: 0;
-  background-color: rgba(243, 125, 57, 0.4392156863);
+  background-color: rgba(243, 125, 57, 0.2039215686);
+}
+
+.textoindex {
+  margin: 23px;
+}
+
+.infonosotrosright {
+  height: auto;
+  background-image: url(../img/nosotros.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.infonosotrosleft {
+  color: white;
+  text-align: justify;
+  text-shadow: 0 0 5px #000;
+  font-size: 20px;
+  padding-top: 30px;
+  margin-top: 0;
+  background-color: rgba(243, 125, 57, 0.1294117647);
+}
+
+.textonosotros {
+  padding: 30px;
 }
 
 .cursos {
@@ -63,7 +90,7 @@ h2 {
   height: auto;
 }
 
-.nleftcursos {
+.nleftcursos, .nleftguitarra, .nleftteatro {
   height: 450px;
   background-image: url(../img/cursos.jpg);
   background-size: cover;
@@ -72,7 +99,7 @@ h2 {
   padding-top: 0px;
 }
 
-.nrightcursos {
+.nrightcursos, .nrightteatro {
   color: white;
   text-align: justify;
   text-shadow: 0 0 5px #000;
@@ -82,38 +109,15 @@ h2 {
 }
 
 .nleftteatro {
-  height: 450px;
   background-image: url(../img/teatro.jpg);
-  background-size: cover;
-  background-position: center;
-  margin-top: 0px;
 }
 
 .nrightteatro {
-  color: white;
-  text-align: justify;
-  text-shadow: 0 0 5px #000;
-  font-size: 20px;
-  padding-top: 30px;
-  background-color: rgba(243, 125, 57, 0.4392156863);
+  background-color: rgba(255, 136, 0, 0.8156862745);
 }
 
 .nleftguitarra {
-  height: 450px;
   background-image: url(../img/guitarra.jpg);
-  background-size: cover;
-  background-position: center;
-  margin-top: 0px;
-}
-
-.nosotros {
-  height: 100vh;
-  background-color: rgba(255, 136, 0, 0.6156862745);
-  color: #fff;
-  text-shadow: 0 0 5px #000;
-  text-align: center;
-  margin-bottom: 0;
-  padding-bottom: 3px;
 }
 
 .galeria {
@@ -150,7 +154,6 @@ img {
   text-align: justify;
 }
 
-/* ---- Contacto ---- */
 .formulario {
   display: flex;
   flex-direction: column;
@@ -161,32 +164,19 @@ img {
 .inputs input {
   padding-left: 100px;
   width: 300px;
-  margin: 10px 0 50px 0;
-  padding: 10px;
-  border: 0px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
-  outline: none;
-}
-.inputs .inputs {
-  margin-top: 50px;
-}
-.inputs input {
-  padding-left: 100px;
-  width: 300px;
   margin: 10px 0 10px 0;
+  margin-top: 50px;
   padding: 10px;
-  border: 0px;
-  border: 2px solid rgba(0, 0, 0, 0.8);
+  border: 3px solid rgba(0, 0, 0, 0.8);
   outline: none;
-  background-color: white;
 }
 
 .mensaje input {
   padding-left: 100px;
   width: 300px;
-  margin: 10px 0 50px 0;
+  margin: 10px 0px 50px 0;
   padding: 10px;
-  border: solid 1px rgba(0, 0, 0, 0.8);
+  border: solid 3px rgba(0, 0, 0, 0.8);
   background-color: white;
   height: 150px;
   outline: none;
@@ -199,44 +189,14 @@ img {
   width: 300px;
   margin: 10px 0 50px 0;
   padding: 10px;
-  border: 0px;
-  border: 2px solid white;
+  border: 3px solid white;
   background-color: rgba(0, 0, 0, 0.8);
-  transition: 0.5s;
-}
-.enviar button {
-  padding-left: 100px;
-  width: 300px;
-  margin: 10px 0 50px 0;
-  padding: 10px;
-  border: 0px;
-  border: 2px solid rgba(0, 0, 0, 0.8);
-  background-color: white;
   transition: 0.5s;
 }
 
-.enviar:hover input {
-  color: white;
-  padding-left: 100px;
-  width: 300px;
-  margin: 10px 0 50px 0;
-  padding: 10px;
-  border: 0px;
-  border: 2px solid white;
-  background-color: rgba(0, 0, 0, 0.8);
+.enviar:hover {
   transition: 0.5s;
   transform: scale(1.1);
-}
-.enviar:hover button {
-  color: white;
-  padding-left: 100px;
-  width: 300px;
-  margin: 10px 0 50px 0;
-  padding: 10px;
-  border: 0px;
-  border: 2px solid white;
-  background-color: rgba(0, 0, 0, 0.8);
-  transition: 0.5s;
 }
 
 .mapa {
